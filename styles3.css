@@ -1,0 +1,60 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2; /* Background color for the entire page */
+}
+
+.calculator {
+    max-width: 300px;
+    margin: 20px auto;
+    background-color: #fff; /* Background color for the calculator container */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a shadow to the calculator */
+}
+
+.display {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.5em;
+    background-color: #333; /* Background color for the display */
+    color: white; /* Text color for the display */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    background-color: #444; /* Background color for the button grid */
+    padding: 10px;
+    border-radius: 0 0 10px 10px; /* Rounded corners for the button grid */
+}
+
+button {
+    padding: 10px;
+    font-size: 1.5em;
+    background-color: #f0f0f0; /* Default button background color */
+    border: none;
+    color: #333; /* Default button text color */
+    cursor: pointer;
+    width: 100%; /* Make all buttons equally wide */
+}
+
+.operator {
+    background-color: #ff5722; /* Operator button background color */
+    color: white; /* Operator button text color */
+}
+
+#clear {
+    grid-column: span 2;
+    background-color: #f44336; /* Clear button background color */
+    color: white; /* Clear button text color */
+    width: 100%; /* Reduce the width to make it equal to operator buttons */
+}
+
+#equals {
+    background-color: #4caf50; /* Equals button background color */
+    color: white; /* Equals button text color */
+}
+
